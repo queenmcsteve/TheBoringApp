@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="./asset/css/styles.css" />
     <title>The Boring App</title>
+  </head>
+  <body>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,6 +50,10 @@
 
   <body>
     <div class="container" id="youtube-container">
+          <div class="card" id="search-term-card">
+        <h4>Search Term:</h4>
+        <h1><span id="search-terms"></span></h1>
+      </div>
       <!-- Red pill (Random Youtube Video)-->
       <div id="youtube-video" class="video-container">
         <iframe
@@ -64,6 +70,7 @@
     </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./asset/js/youtube.js"></script>
   </body>

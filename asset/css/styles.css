@@ -6,7 +6,7 @@
 
 * {
   font-family: var(--textstyle);
-  font-size: large;
+  /* font-size: large; */
 }
 
 body {
@@ -30,6 +30,19 @@ body {
 
 nav .brand-logo {
   padding-left: 2rem;
+}
+
+#search-term-card {
+  padding: 10px;
+  display: flex;
+  display: grid;
+  display: block;
+  text-align: center;
+  flex: 1 1 65%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  /* font-size: 66px; */
 }
 
 #loading {
