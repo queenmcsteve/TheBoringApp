@@ -7,7 +7,7 @@ This project has for purpose to challenge our skills with the latest knowledge i
 ## Objectives
 
 ```md
-The main objective of this project is to create an application that could be related to our daily lifes. And since 2 years our daily lives have been more online then ever. Which is factor of daily boredom. Thus the idea to help those people who are in need of a boredom cure.
+The main objective of this project is to create an application that could be related to our daily lives. And since 2 years our daily lives have been more online then ever. Which is factor of daily boredom. Thus the idea to help those people who are in need of a boredom cure.
 The BoringApp team made an easy to understand application that will permit the user to cure boredom by entertaining them.
 With the hope to give a productivity boost at the end of the break.
 ```
@@ -48,14 +48,14 @@ THEN text appears to inform the user about his choice possibility
 
 ```md
 WHEN the user clicks on the BLUE pill
-THEN the user will access a page where he will have the choice to make an activity (based on the Bored server API) or to watch someone do it online ( by pushing the bored activity into the youtube search query)
+THEN the user will access a page with a randomly selected activity suggestion from the BoredAPI, and a localstorage item 'bluepills' is created or updated with the count of page visits. The user can decide to complete the activity in the real world, or alternatively watch someone else do it with a button click. This button returns the first YouTube search result for the BoredAPI activity string, as well as creating or updating a localstorage item 'redpills' which counts YouTube videos delivered.
 ```
 
 ![Random Activity](screenshots/click-bluel.png)
 
 ```md
 WHEN the user clicks on the RED pill
-THEN he will stay in the matrix and be directed to a page where he can watch random videos (Youtube API)
+THEN she will stay in the matrix and be directed to a page where a randomly selected word (via a random word api: https://random-word-api.herokuapp.com) is plugged into the YouTube API and the first result is rendered on the screen. When the screen loads, a localstorage item 'redpills' is created or updated with a count of the number of screen loads.
 ```
 
 ![Random Video](screenshots/click-red.png)
@@ -71,9 +71,9 @@ THEN he will be presented with the following information
 
 ```md
 WHEN the user wants to know what the global percentage of choice for the pills is
-THEN he will find the "Statistics" button in the navbar
+THEN she will find the "Statistics" button in the navbar
 WHEN the user access this page
-THEN he will find a graph with the necessary information (by retrieving stats from the local storage and building it with d3.js)
+THEN she will find a graph with the necessary information (by retrieving stats from the local storage and building it with d3.js)
 ```
 
 ![Statistics](screenshots/statistics.png)
