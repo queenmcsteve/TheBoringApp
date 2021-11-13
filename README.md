@@ -46,10 +46,8 @@ THEN text appears to inform the user about his choice possibility
 ![Blue Pill](screenshots/blue_pill.png)
 ![Red Pill](screenshots/red_pill.png)
 
-```md
 WHEN the user clicks on the BLUE pill
 THEN the user will access a page with a randomly selected activity suggestion from the BoredAPI, and a localstorage item 'bluepills' is created or updated with the count of page visits. The user can decide to complete the activity in the real world, or alternatively watch someone else do it with a button click. This button returns the first YouTube search result for the BoredAPI activity string, as well as creating or updating a localstorage item 'redpills' which counts YouTube videos delivered.
-```
 
 ![Random Activity](screenshots/click-bluel.png)
 
@@ -114,7 +112,7 @@ With the tremendous help and support from Swapnil Gaikwad
 
 ## DEMO
 
-[TheBoringApp](https://zahramammadli.github.io/TheBoringApp/index.html)
+[TheBoringApp](https://queenmcsteve.github.io/TheBoringApp/index.html)
 
 Copyright 2021 Queen McSteve (contact via GitHub)
 
